@@ -16,7 +16,6 @@ $browser.waitForAndFindElement = function (locatorOrElement, timeoutMsOpt) {
         };
 
 //var driver = new webdriver.Builder().forBrowser('chrome').build();
-
 //$browser.manage().window().setSize(2732,2732);
 $browser.get("https://www.palacecinemas.com.au/")
 .then(function(){
@@ -43,6 +42,4 @@ $browser.findElement($driver.By.className("icon icon-searchnew")).click();
     $browser.waitForElement($driver.By.xpath("//*[@id='bycinema']/div/div[2]/div/ul/li[3]"),5000).click();
 })
 ;
-
-
 // $browser.close(5000);
